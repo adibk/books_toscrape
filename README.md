@@ -1,4 +1,6 @@
-# books_toscrape
+# books to scrape
+
+**website:** https://books.toscrape.com/
 
 ## Data Analysis Project
 
@@ -19,8 +21,8 @@ This project involves extracting data from Books to Scrape, creating a database,
 5. Data Visualization: Create visualizations connected directly to your database to analyze the data.
 
 ### Tools
-    - SQL for querying the database
-    - Your choice of visualization tools connected to the database
+- SQL for querying the database
+- Your choice of visualization tools connected to the database
 
 ### Getting Started
 1. Clone the repository
