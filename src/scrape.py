@@ -5,13 +5,14 @@ from bs4 import BeautifulSoup
 
 book_links = []
 
-page_nb = 1
+page_nb = 50
 while True:
-    url = f'https://books.toscrape.com/catalogue/page-{page_nb}.html'
+    base_url = 'https://books.toscrape.com/catalogue'
+    page_url = f'{base_url}/page-{page_nb}.html'
 
-    print(f'request page: {page_nb}, url: {url}')
+    print(f'request page: {page_nb}, url: {page_url}')
 
-    response = requests.get(url)
+    response = requests.get(page_url)
     if response.status_code != 200:
         break
 
@@ -20,12 +21,10 @@ while True:
 
     for book in books:
         link = book.h3.a['href']
-        full_link = url + link
-        book_links.append(full_link)
+        book_links.append(f'{base_url}/{link}')
     
     page_nb += 1
     
 for book_link in book_links:
     print(book_link)
 
-# print(books)
