@@ -33,3 +33,8 @@ This project involves extracting data from Books to Scrape, creating a database,
 ### License
 This project is licensed under the MIT License.
 
+### To add to readme
+'''
+python -m spacy download en_core_web_sm
+'''
+https://books.toscrape.com/catalogue/the-bridge-to-consciousness-im-writing-the-bridge-between-science-and-our-old-and-new-beliefs_840/index.html no description
