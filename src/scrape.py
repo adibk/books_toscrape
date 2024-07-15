@@ -4,9 +4,6 @@ from urllib.parse import urljoin
 import re
 import spacy
 
-def get_books_content():
-    # Your function implementation here
-    pass
 verbose = True
 verbose_content = False
 
