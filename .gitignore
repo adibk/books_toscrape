@@ -123,3 +123,4 @@ yarn-error.log* data/csv
 !data 
 !static/
 !img/
+!*.sql
